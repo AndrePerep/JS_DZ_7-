@@ -5,10 +5,10 @@
 /*______________________________________________ЗАДАЧА 1_______________________________________________________
     Написать функцию, которая считает количество слов в предложении.*/
 
-// function getCounterWords(str) { 
-//     return string.split(' ').length
-// }
-// console.log(getCounterWords('Я учу JS'))
+function getCounterWords(str) { 
+    return string.split(' ').length
+}
+console.log(getCounterWords('Я учу JS'))
 
 
 
@@ -16,15 +16,15 @@
     Написать функцию сокращения строки. Функция принимает строку и ее максимальную длину. Если длина строки больше, чем максимальная, то необходимо отбросить лишние символы, добавив вместо них троеточие.
 Например: truncate(“Hello, world!”, 8) должна вернуть “Hello...”.*/
 
-// function clampString (str, number){
-//     if(str.length <= number){
-//         return str
-//     }
-//     str = str.slice(0, number - 3)
-//     str += "..."
-//     return str
-// }
-// console.log(clampString('Hello, world!', 8))
+function clampString (str, number){
+    if(str.length <= number){
+        return str
+    }
+    str = str.slice(0, number - 3)
+    str += "..."
+    return str
+}
+console.log(clampString('Hello, world!', 8))
 
 
 
@@ -36,15 +36,15 @@
     func(arr, 4); // 5
     func(arr, 5); // 1*/
 
-// let arr = [1, 2, 3, 4, 5]
-// function func(arr, number) { 
-//     if(number < arr.length){
-//         return arr[number]
-//     } else{
-//         return arr[0]
-//     }
-// }
-// console.log(func(arr, 1))
+let arr = [1, 2, 3, 4, 5]
+function func(arr, number) { 
+    if(number < arr.length){
+        return arr[number]
+    } else{
+        return arr[0]
+    }
+}
+console.log(func(arr, 1))
 
 
 
@@ -53,11 +53,11 @@
 const arrayNumbers = [2, 4, 10, 6, 8, 14, 24, 50];
 console.log(isEven); // => true*/
 
-// const arrayNumbers = [2, 4, 10, 6, 8, 14, 24, 50]
-// const isEven = function.isEven () {
-
-// }
-// console.log(isEven)
+const arrayNumbers = [2, 4, 10, 6, 8, 14, 24, 50];
+const isEven = arrayNumbers.every((user) => {
+    return user % 2 === 0;
+});
+console.log(isEven);
 
 
 
