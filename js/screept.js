@@ -69,23 +69,14 @@ console.log(isEven); // => true*/
 "1234!_" -> "11223344!!__"
 Используйте методы строк и методы массивов */
 
-const str = 'Hello, world!'
-let arr = str.split('')
-let newArr = arr
-console.log(str)
-console.log(arr)
-console.log(newArr)
-for (let i = 0; i < arr.length*2; i+=2) {
-    newArr[i] = arr[i]
-    newArr[i+1] = arr[i]
+const str = 'Hello world!'
+const doubleStr = function(str) {
+    str = str.split('');
+    var i = 0;
+    while (i < str.length) {
+        str.splice(i, 0, str[i]);
+        i += 2;
+    }
+    return str.join('');
 }
-console.log(newArr)
-
-// function doubleСhar (str) {
-//     let arr = str.split()
-//     let newArr = arr
-//     for (let i = arr.length; i > 0; i--) {
-//         newArr.push(arr[i]) 
-//     }
-// }
-// console.log(doubleСhar())
+console.log(doubleStr(str))
